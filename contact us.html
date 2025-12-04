@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sierra Leone FC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/SLFA2.webp" alt="Club Logo" style="height: 60px;">
+                <h1>Sierra Leone FC</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="match.html"><i class="fas fa-calendar-alt"></i> Matches</a></li>
+                    <li><a href="players.html"><i class="fas fa-users"></i> Players</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">Contact Sierra Leone FC</h1>
+        <p class="page-subtitle">Get in touch with us. We're here to help!</p>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-section">
+                    <h2><i class="fas fa-map-marker-alt"></i> Visit Us</h2>
+                    <div class="address-card">
+                        <h3>Main Office & Stadium</h3>
+                        <p><i class="fas fa-location-dot"></i> National Stadium Complex</p>
+                        <p>Siaka Stevens Street</p>
+                        <p>Freetown, Sierra Leone</p>
+                    </div>
+                    <div class="address-card">
+                        <h3>Training Complex</h3>
+                        <p><i class="fas fa-location-dot"></i>Kingtom training field</p>
+                        <p>Freetown, Sierra Leone</p>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h2><i class="fas fa-phone"></i> Call Us</h2>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone-volume"></i> General Enquiries: <strong>+232 123 456 789</strong></p>
+                        <p><i class="fas fa-ticket-alt"></i> Ticket Office: <strong>+232 34 845 601</strong></p>
+                        <p><i class="fas fa-graduation-cap"></i> Academy: <strong>+232 34 845 601</strong></p>
+                        <p><i class="fas fa-briefcase"></i> 
+                            
+                            Partnerships: <strong>+232 34 845 601</strong></p>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h2><i class="fas fa-clock"></i> Opening Hours</h2>
+                    <div class="hours-card">
+                        <p><strong>Administrative Office:</strong></p>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p>Saturday: 9:00 AM - 4:00 PM</p>
+                        <p>Sunday: Closed</p>
+                        
+                        <p><strong>Ticket Office (Match Days):</strong></p>
+                        <p>Open 3 hours before kickoff until halftime</p>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h2><i class="fas fa-shield-alt"></i> Secure Contact</h2>
+                    <div class="security-info">
+                        <p><i class="fas fa-lock"></i> All communications are encrypted</p>
+                        <p><i class="fas fa-user-shield"></i> GDPR compliant data handling</p>
+                        <p><i class="fas fa-check-circle"></i> Verified response within 48 hours</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h2><i class="fas fa-paper-plane"></i> Send Us a Message</h2>
+                    <p>Secure and encrypted form. All fields are required.</p>
+                </div>
+
+                <form id="contactForm" class="secure-form">
+                    <div class="form-group">
+                        <label for="fullName"><i class="fas fa-user"></i> Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+232 XXX XXX XXX">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject"><i class="fas fa-tag"></i> Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="tickets">Ticket Information</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                            <option value="academy">Youth Academy</option>
+                            <option value="media">Media Inquiry</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="feedback">Feedback & Suggestions</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <div class="form-security">
+                        <div class="security-check">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">I agree to the <a href="#" class="privacy-link">Privacy Policy</a> and data handling terms *</label>
+                        </div>
+                        <div class="security-check">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Subscribe to club newsletter and updates</label>
+                        </div>
+                    </div>
+
+                    <div class="captcha-section">
+                        <div class="captcha-box">
+                            <span id="captchaText">5 + 3 = ?</span>
+                            <input type="text" id="captchaInput" placeholder="Enter answer" required>
+                        </div>
+                        <button type="button" class="refresh-captcha" onclick="refreshCaptcha()" title="Refresh CAPTCHA">
+                            <i class="fas fa-redo"></i>
+                        </button>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Secure Message
+                    </button>
+
+                    <div class="form-note">
+                        <p><i class="fas fa-info-circle"></i> All messages are encrypted and will be responded to within 48 hours.</p>
+                    </div>
+                </form>
+
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <div class="links-grid">
+                        <a href="#" class="quick-link">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>Buy Tickets Online</span>
+                        </a>
+                        <a href="#" class="quick-link">
+                            <i class="fas fa-store"></i>
+                            <span>Online Store</span>
+                        </a>
+                        <a href="#" class="quick-link">
+                            <i class="fas fa-newspaper"></i>
+                            <span>Press Center</span>
+                        </a>
+                        <a href="#" class="quick-link">
+                            <i class="fas fa-file-contract"></i>
+                            <span>Careers</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="map-section">
+            <h2><i class="fas fa-map"></i> Find Us</h2>
+            <div class="map-placeholder">
+                <div class="map-overlay">
+                    <h3>National Stadium Complex</h3>
+                    <p>Siaka Stevens Street, Freetown</p>
+                    <a href="#" class="directions-btn"><i class="fas fa-directions"></i> Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sierra Leone premier League </h3>
+                <p>Always Here For You</p>
+            </div>
+            <div class="footer-section">
+                <h3>Emergency Contact</h3>
+                <p>Security: +232 123 456 777</p>
+                <p>Medical: +232 123 456 666</p>
+            </div>
+            <div class="footer-section">
+                <h3>Data Protection</h3>
+                <p>GDPR Compliant /SSL Encrypted</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Sierra Leone Football Club. All Rights Reserved. | <a href="#" class="privacy-link">Privacy Policy</a> | <a href="#" class="terms-link">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function refreshCaptcha() {
+            const num1 = Math.floor(Math.random() * 10) + 1;
+            const num2 = Math.floor(Math.random() * 10) + 1;
+            document.getElementById('captchaText').textContent = `${num1} + ${num2} = ?`;
+            sessionStorage.setItem('captchaAnswer', (num1 + num2).toString());
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const captchaInput = document.getElementById('captchaInput').value;
+            const captchaAnswer = sessionStorage.getItem('captchaAnswer');
+            
+            if (captchaInput !== captchaAnswer) {
+                alert('Please solve the CAPTCHA correctly.');
+                refreshCaptcha();
+                return;
+            }
+            
+            // Form validation
+            const formData = new FormData(this);
+            let isValid = true;
+            
+            formData.forEach((value, key) => {
+                if (key !== 'newsletter' && !value.trim()) {
+                    isValid = false;
+                }
+            });
+            
+            if (!isValid) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert('Thank you for your message! We will respond within 48 hours.');
+            this.reset();
+            refreshCaptcha();
+        });
+
+        // Initialize CAPTCHA on load
+        document.addEventListener('DOMContentLoaded', refreshCaptcha);
+    </script>
+</body>
+</html>

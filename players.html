@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players | Sierra Leone FC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/SLFA.webp" alt="Club Logo" style="height: 60px;">
+                <h1>Sierra Leone FC</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="match.html"><i class="fas fa-calendar-alt"></i> Matches</a></li>
+                    <li><a href="players.html" class="active"><i class="fas fa-users"></i> Players</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">Our Players</h1>
+        <p class="page-subtitle">The talented individuals who represent Sierra Leone FC with pride and passion</p>
+        
+        <div class="player-filters">
+            <button class="filter-btn active" onclick="filterPlayers('all')">All Players</button>
+            <button class="filter-btn" onclick="filterPlayers('goalkeeper')">Goalkeepers</button>
+            <button class="filter-btn" onclick="filterPlayers('defender')">Defenders</button>
+            <button class="filter-btn" onclick="filterPlayers('midfielder')">Midfielders</button>
+            <button class="filter-btn" onclick="filterPlayers('forward')">Forwards</button>
+        </div>
+
+        <div class="players-grid">
+            <!-- Player 1 -->
+            <div class="player-card" data-position="goalkeeper">
+                <div class="player-img">
+                    <img src="images/sesay12.webp" alt="Mohamed Kamara">
+                    <div class="player-number">1</div>
+                </div>
+                <div class="player-info">
+                    <h3>Mohamed Kamara</h3>
+                    <p class="player-position">Goalkeeper</p>
+                    <div class="player-stats">
+                        <span><i class="fas fa-calendar"></i> Age: 28</span>
+                        <span><i class="fas fa-flag"></i> Sierra Leone</span>
+                        <span><i class="fas fa-futbol"></i> App: 145</span>
+                    </div>
+                    <p class="player-bio">Captain and defensive leader. Known for incredible reflexes and leadership on and off the pitch.</p>
+                    <div class="player-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Player 2 -->
+            <div class="player-card" data-position="defender">
+                <div class="player-img">
+                    <img src="images/Alhassank.webp" alt="Alhassan Koroma">
+                    <div class="player-number">4</div>
+                </div>
+                <div class="player-info">
+                    <h3>Alhassan Koroma</h3>
+                    <p class="player-position">Center Back</p>
+                    <div class="player-stats">
+                        <span><i class="fas fa-calendar"></i> Age: 26</span>
+                        <span><i class="fas fa-flag"></i> Sierra Leone</span>
+                        <span><i class="fas fa-futbol"></i> App: 98</span>
+                    </div>
+                    <p class="player-bio">Strong and commanding defender. Excellent in aerial duels and starting attacks from the back.</p>
+                    <div class="player-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Player 3 -->
+            <div class="player-card" data-position="midfielder">
+                <div class="player-img">
+                    <img src="images/kamara2.webp" alt="Sorie Bangura">
+                    <div class="player-number">8</div>
+                </div>
+                <div class="player-info">
+                    <h3>Sorie Bangura</h3>
+                    <p class="player-position">Central Midfielder</p>
+                    <div class="player-stats">
+                        <span><i class="fas fa-calendar"></i> Age: 24</span>
+                        <span><i class="fas fa-flag"></i> Sierra Leone</span>
+                        <span><i class="fas fa-futbol"></i> App: 76</span>
+                    </div>
+                    <p class="player-bio">Creative playmaker with excellent vision. Controls the tempo of the game and provides key assists.</p>
+                    <div class="player-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Player 4 -->
+            <div class="player-card" data-position="forward">
+                <div class="player-img">
+                    <img src="images/players/forward1.jpg" alt="Ibrahim Sesay">
+                    <div class="player-number">11</div>
+                </div>
+                <div class="player-info">
+                    <h3>Ibrahim Sesay</h3>
+                    <p class="player-position">Striker</p>
+                    <div class="player-stats">
+                        <span><i class="fas fa-calendar"></i> Age: 25</span>
+                        <span><i class="fas fa-flag"></i> Sierra Leone</span>
+                        <span><i class="fas fa-futbol"></i> Goals: 45</span>
+                    </div>
+                    <p class="player-bio">Proven goal scorer with incredible speed and finishing ability. Top scorer for two consecutive seasons.</p>
+                    <div class="player-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Player 5 -->
+            <div class="player-card" data-position="midfielder">
+                <div class="player-img">
+                    <img src="images/players/midfielder2.jpg" alt="Mohamed Turay">
+                    <div class="player-number">10</div>
+                </div>
+                <div class="player-info">
+                    <h3>Mohamed Turay</h3>
+                    <p class="player-position">Attacking Midfielder</p>
+                    <div class="player-stats">
+                        <span><i class="fas fa-calendar"></i> Age: 27</span>
+                        <span><i class="fas fa-flag"></i> Sierra Leone</span>
+                        <span><i class="fas fa-futbol"></i> Assists: 32</span>
+                    </div>
+                    <p class="player-bio">Skilled dribbler and set-piece specialist. Creates opportunities and scores spectacular goals.</p>
+                    <div class="player-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="team-stats">
+            <h2>Squad Statistics 2024-2025</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>45</h3>
+                    <p>Goals Scored</p>
+                </div>
+                <div class="stat-item">
+                    <h3>18</h3>
+                    <p>Clean Sheets</p>
+                </div>
+                <div class="stat-item">
+                    <h3>62%</h3>
+                    <p>Average Possession</p>
+                </div>
+                <div class="stat-item">
+                    <h3>28</h3>
+                    <p>Assists</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="coaching-staff">
+            <h2>Coaching Staff</h2>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <img src="images/coach1.jpg" alt="Head Coach">
+                    <h3>David Keister</h3>
+                    <p>Head Coach</p>
+                </div>
+                <div class="staff-card">
+                    <img src="images/coach2.jpg" alt="Assistant Coach">
+                    <h3>John Sama</h3>
+                    <p>Assistant Coach</p>
+                </div>
+                <div class="staff-card">
+                    <img src="images/coach3.jpg" alt="Fitness Coach">
+                    <h3>Sarah Bangura</h3>
+                    <p>Fitness Coach</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sierra Leone FC</h3>
+                <p>Our Players, Our Pride</p>
+            </div>
+            <div class="footer-section">
+                <h3>Academy</h3>
+                <p>Developing future stars since 1990</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Sierra Leone Football Club. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function filterPlayers(position) {
+            const players = document.querySelectorAll('.player-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+            
+            players.forEach(player => {
+                if (position === 'all' || player.dataset.position === position) {
+                    player.style.display = 'flex';
+                } else {
+                    player.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

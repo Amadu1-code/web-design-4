@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches | Sierra Leone FC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/SLFA.webp" alt="Club Logo" style="height: 60px;">
+                <h1>Sierra Leone FC</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="match.html" class="active"><i class="fas fa-calendar-alt"></i> Matches</a></li>
+                    <li><a href="players.html"><i class="fas fa-users"></i> Players</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">Matches & Fixtures</h1>
+        
+        <section class="next-match">
+            <div class="match-banner">
+                <h2><i class="fas fa-arrow-right"></i> NEXT MATCH</h2>
+                <div class="match-details">
+                    <div class="team">
+                        <h3>Bo Rangers FC</h3>
+                        <p>Home</p>
+                    </div>
+                    <div class="vs">
+                        <span class="match-date">APR 15, 2026 | 20:00 GMT</span>
+                        <h2>VS</h2>
+                        <span class="stadium">National Stadium, Freetown</span>
+                    </div>
+                    <div class="team">
+                        <h3>Diamond stars</h3>
+                        <p>Away</p>
+                    </div>
+                </div>
+                <a href="#" class="ticket-button"><i class="fas fa-ticket-alt"></i> BUY TICKETS</a>
+            </div>
+        </section>
+
+        <div class="matches-tabs">
+            <button class="tab-btn active" onclick="openTab('upcoming')">Upcoming Fixtures</button>
+            <button class="tab-btn" onclick="openTab('results')">Recent Results</button>
+            <button class="tab-btn" onclick="openTab('standings')">League Standings</button>
+        </div>
+
+        <div id="upcoming" class="tab-content active">
+            <h2>Upcoming Fixtures</h2>
+            <div class="fixtures-list">
+                <div class="fixture">
+                    <span class="fixture-date">feb 22, 2026</span>
+                    <div class="fixture-teams">
+                        <span class="team-home">F C Kallon</span>
+                        <span class="vs">vs</span>
+                        <span class="team-away">Diamond stars FC</span>
+                    </div>
+                    <span class="fixture-time">18:00 GMT</span>
+                    <span class="fixture-comp"> Sierra LeonePremier League</span>
+                </div>
+                <div class="fixture">
+                    <span class="fixture-date">Apr 29, 2025</span>
+                    <div class="fixture-teams">
+                        <span class="team-home">Eastern Lions FC</span>
+                        <span class="vs">vs</span>
+                        <span class="team-away">mighty blackpool</span>
+                    </div>
+                    <span class="fixture-time">19:00 GMT</span>
+                    <span class="fixture-comp">Cup Quarterfinal</span>
+                </div>
+                <div class="fixture">
+                    <span class="fixture-date">Jan 6, 2026</span>
+                    <div class="fixture-teams">
+                        <span class="team-home">prot authority </span>
+                        <span class="vs">vs</span>
+                        <span class="team-away">Bo Rangers FC</span>
+                    </div>
+                    <span class="fixture-time">16:30 GMT</span>
+                    <span class="fixture-comp">Premier League</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="results" class="tab-content">
+            <h2>Recent Results</h2>
+            <div class="results-list">
+                <div class="result win">
+                    <span class="result-date">Mar 29, 2026</span>
+                    <div class="result-teams">
+                        <span class="team-home">Bo Rangers FC</span>
+                        <span class="score">3 - 1</span>
+                        <span class="team-away">FC Kallon</span>
+                    </div>
+                    <span class="result-comp">Premier League</span>
+                    <span class="result-highlight"><i class="fas fa-play-circle"></i> HIGHLIGHTS</span>
+                </div>
+                <div class="result draw">
+                    <span class="result-date">Mar 22, 2026</span>
+                    <div class="result-teams">
+                        <span class="team-home">East Lions</span>
+                        <span class="score">2 - 2</span>
+                        <span class="team-away">Mighty blackpool FC</span>
+                    </div>
+                    <span class="result-comp">Premier League</span>
+                    <span class="result-highlight"><i class="fas fa-play-circle"></i> HIGHLIGHTS</span>
+                </div>
+                <div class="result win">
+                    <span class="result-date">Mar 15, 2026</span>
+                    <div class="result-teams">
+                        <span class="team-home">Port authority FC</span>
+                        <span class="score">4 - 0</span>
+                        <span class="team-away">Diamond Stars FC</span>
+                    </div>
+                    <span class="result-comp">Champions League</span>
+                    <span class="result-highlight"><i class="fas fa-play-circle"></i> HIGHLIGHTS</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="standings" class="tab-content">
+            <h2>League Standings</h2>
+            <table class="standings-table">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>Team</th>
+                        <th>P</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>GD</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="current-team">
+                        <td>1</td>
+                        <td><strong>Bo Rangers FC</strong></td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>+3</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>FC Kallon</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>+2</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>mighty blackpool</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>-2</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="competitions">
+            <h2>Competitions 2025-2026</h2>
+            <div class="competition-cards">
+                <div class="competition-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Sierra LeonePremier League</h3>
+                    <p>Current: 1st Place</p>
+                    <P>Bo Rangers FC</P>
+                </div>
+                <div class="competition-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Champions League</h3>
+                    <p>Quarterfinals</p>
+                </div>
+                <div class="competition-card">
+                    <i class="fas fa-cup"></i>
+                    <h3>National Cup</h3>
+                    <p>Champions 2025</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3> Sierra Leone premier League </h3>
+                <p>Match Center</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ticket Office</h3>
+                <p>Open 9AM-6PM Daily</p>
+                <p>+232 123 456 789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Sierra Leone Football Club. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent, tabbuttons;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tabbuttons = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            event.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
