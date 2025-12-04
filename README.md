@@ -1,4 +1,4 @@
-# 📌 Web Design Project – Multi-Page Website
+# Web Design Project  Website
 
 This project is a complete **five-page website** built with **HTML and CSS**, including images, organized folders, and wireframes to show professional planning and development workflow.
 
